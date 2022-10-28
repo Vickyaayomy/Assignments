@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.flexbox {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.home {
+  max-height: 960px;
+  margin: auto;
+}
+
+.cars {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sedan {
+  width: 270px;
+  height: 440px;
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  width: 270px;
+  height: 440px;
+  padding: 40px;
+}
+
+.luxury {
+  width: 270px;
+  height: 440px;
+  padding: 40px;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 13px 27px;
+  border-radius: 30px;
+  color: hsl(31, 77%, 52%);
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 55px;
+}
+
+.btn-one {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-two {
+  color: hsl(179, 100%, 13%);
+}
+
+a {
+  margin-top: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color:white;
+}
+
+/* Grid CSS */
+body.grid  {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.size {
+    padding: 100px;
+}
+
+.container {
+    background-color: rgb(2, 2, 36);
+    width: 700px;
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    ;
+}
+
+.red {
+    background-color: red;
+    grid-area: a;
+}
+
+.orange {
+    background-color: orange;
+    grid-area: b;
+}
+
+.green {
+    background-color: green;
+    grid-area: c;
+}
+
+.blue {
+    grid-area: d;
+}
+
+.blue1 {
+    background-color: rgb(23, 150, 209);
+    padding: 50px;
+}
+
+.blue2 {
+    background-color: rgb(23, 150, 209);
+    margin-top: 15px;
+    padding: 50px;
+}
+
+@media only screen and
+(max-width: 475px) {
+    body.grid  {
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: block;
+        background-color: rgb(2, 2, 36);
+       
+        padding: 20px;
+    }
+
+    .size {
+        padding: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .blue1, .blue2 {
+        padding: 3rem;
+    }
+
+  body.flexbox {
+    height: 100%;
+  }
+
+  .cars {
+    display: block;
+  }
+
+  .sedan {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+
+  .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+}
