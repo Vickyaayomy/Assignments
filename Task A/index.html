@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ac46443ac4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio site</title>
+  </head>
+  <body>
+    <!-- Using Replit, build a simple HTML & CSS-driven website with a few linked pages and styled content.
+
+How to do it:
+
+Create a simple portfolio website with the following information: about me section, contact page, services section, project, Using HTML semantics, you should have a header, main, and footer tag. Add a navigation menu at the top of the home page. You should use inline linking to the sections on the home page and make the other pages, like contact us, open up a new page.
+The following should be included in your portfolio: 
+
+ Your name
+A paragraph about yourself
+Projects (everything you have done, both zuri and outside.)
+Services 
+Hobbies, priorities, and other skills
+Somewhere on the page where it makes sense visually, add a photo of yourself.
+Name
+Email
+Message
+Hint Searching for designs online will give you a better understanding of a beautiful design. -->
+    <div class="container">
+      <header>
+        <nav>
+          <h1 class="logo">OPEYEMI</h1>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#SERVICES">SERVICES</a></li>
+            <li><a href="#PROJECTS">PROJECTS</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="intro-sect">
+            <h1>Hi, I'm Opeyemi <span>Ogunfeyitimi</span></h1>
+            <h3>Frontend Developer</h3>
+          </div>
+
+          <!-- my picture -->
+          <div>
+            <img
+              class="my-picture"
+              src="portfolio picture.jpg"
+              alt="my picture"
+            />
+          </div>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="ABOUT">
+          <h1 class="section-head">About me</h1>
+          <p class="interest">
+            I'm a programmer with an educational background in Computer Science.
+            I have interest in designing beautiful interfaces, building and
+            creating softwares that can help eradicate problems. I have the
+            knowledge of HTML, CSS, JavaScript and C programming.
+          </p>
+
+          <!-- <div class="hobbies">
+            
+          </div> -->
+        </section>
+
+        <section class="our-services" id="SERVICES">
+          <h1 class="section-head">Services</h1>
+          <div class="service">
+            <div class="serve hobbies">
+              <h3>Hobbies</h3>
+              <ul>
+                <li>Traveling</li>
+                <li>Listening to music</li>
+                <li>Watching movies</li>
+              </ul>
+            </div>
+            <div class="serve hobbies">
+              <h3>Priorities</h3>
+              <ul>
+                <li>Family</li>
+                <li>Learning</li>
+                <li>Success</li>
+              </ul>
+            </div>
+            <div class="serve hobbies">
+              <h3>Frontend Development</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="PROJECTS">
+          <h1 class="section-head">My Projects</h1>
+          <ul>
+            <li>
+              <h3>
+                <a href="https://codepen.io/Vickyayo/pen/OJZwrZE"
+                  >A simple tribute page of Mary Slessor</a
+                >
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://Registration-Form-projectI4GxZuri.vicky0205.repl.co"
+                  >A simple Registration form</a
+                >
+              </h3>
+            </li>
+            <li>
+              <h3><a href="">A Portfolio website</a></h3>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <h3 class="section-head">Social links</h3>
+        <div class="icons">
+          <ul>
+            <li>
+              <a href="https://github.com/Vickyaayomy/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/OgunfeyitimiOp1"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/Vickyayo"
+                ><i class="fa-brands fa-codepen"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn">
+          <button><a href="contact.html">Contact me</a></button>
+          <p>
+            <i class="fa-regular fa-copyright"></i>Copyright | Made with HTML
+            and CSS
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

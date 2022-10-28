@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Log in</h1>
+      </header>
+      <form action="success.html">
+        <main>
+          <section>
+            <label for="email">E-mail</label>
+            <input
+              class="names"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e-mail"
+              required
+            />
+
+            <br />
+            <label for="pwd">Password</label>
+            <input
+              class="names"
+              type="password"
+              name="pwd"
+              id="pwd"
+              placeholder="password"
+              required
+              minlength="6"
+              maxlength="10"
+            />
+          </section>
+
+          <footer>
+            <!-- <a  href="success.html" class="reg-link"
+                ><input type="submit" value="Log in"
+              /></a> -->
+            <button type="submit">Log in</button>
+            <br />
+
+            <div class="footer">
+              <span>Don't have an account?</span>
+              <a class="reg-log" href="index.html">Register</a>
+            </div>
+          </footer>
+        </main>
+      </form>
+    </div>
+  </body>
+</html>

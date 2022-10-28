@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Register</h1>
+      </header>
+
+      <form action="success.html">
+        <main>
+          <section>
+            <!-- <div class="input-box"> -->
+            <label for="firstname">First name</label><br />
+            <input
+              class="names"
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="firstname"
+              required
+            />
+            <!-- </div> -->
+
+            <!-- <div class="input-box"> -->
+            <label for="lastname">Last name</label><br />
+            <input
+              class="names"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="lastname"
+              required
+            />
+            <!-- </div> -->
+
+            <!-- <div class="input-box"> -->
+            <label for="email">E-mail</label><br />
+            <input
+              class="names"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e-mail"
+              required
+            />
+            <!-- </div> -->
+
+            <label for="pwd">Password</label><br />
+            <input
+              class="names"
+              type="password"
+              name="pwd"
+              id="pwd"
+              placeholder="password"
+              required
+              minlength="6"
+              maxlength="10"
+            />
+
+            <div class="gender-dob">
+              <div class="gender-dropdown input-box">
+                <label for="gender">Gender</label><br />
+                <select name="" id="" required>
+                  <option value="g1">Select</option>
+                  <option value="g2">Female</option>
+                  <option value="g3">Male</option>
+                  <option value="g4">Prefer not to say</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="dob">Date of birth</label><br />
+                <input type="date" name="dob" id="dob" value="dob" required />
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="favcolor">Pick your favorite color:</label>
+              <input
+                type="color"
+                name="favcolor"
+                id="favcolor"
+                value="favcolor"
+                required
+              />
+            </div>
+          </section>
+
+          <footer>
+            <button type="submit">Sign Up</button>
+
+            <div class="footer">
+              <span>Already have an account?</span
+              ><a class="reg-log" href="login.html">Log in</a>
+            </div>
+          </footer>
+        </main>
+      </form>
+    </div>
+  </body>
+</html>
